@@ -1,0 +1,29 @@
+.p-2 {
+    padding: 0.5rem;
+  }
+  
+  .border-2 {
+    border-width: 2px;
+  }
+  
+  .rounded-sm {
+    border-radius: 0.125rem;
+  }
+  
+  .border {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .border a {
+    text-decoration: none;
+    color: #2563eb;
+    transition: color 0.2s;
+  }
+  
+  .border a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+  }

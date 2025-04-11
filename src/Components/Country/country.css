@@ -1,0 +1,85 @@
+.country {
+  background: white;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column; 
+}
+
+.flag-img-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%; 
+  position: relative;
+  overflow: hidden;
+}
+
+.flag-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: transform 0.3s ease;
+}
+
+.country:hover .flag-img {
+  transform: scale(1.05); 
+}
+
+.flag-detail {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--border-radius);
+}
+
+
+.flag-img-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 45%;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.flag-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.country a {
+  display: block;
+  height: 180px;
+  overflow: hidden;
+}
+
+.country {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+  height: 100%;
+}
+
+.card-i {
+  padding: 1rem;
+}
+
+.name {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
