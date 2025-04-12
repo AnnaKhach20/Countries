@@ -1,4 +1,4 @@
-// Countries
+// Country-neri reducer
 export const countriesReducer = (state = { countries: [], loading: false, error: null }, action) => {
     switch(action.type) {
       case 'GET_COUNTRIES_REQUEST':

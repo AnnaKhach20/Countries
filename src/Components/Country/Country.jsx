@@ -7,7 +7,7 @@ export default function Country({ flag, name, population, region, capital, cca3 
     <section className='country'>
       <NavLink to={`/country/${cca3}`} className="flag-link">
         <div className="flag-img-container">
-          <img src={flag} alt={`Flag of ${name}`} className="flag-img" />
+          <img src={flag} className="flag-img" />
         </div>
       </NavLink>
       <div className='card-i'>

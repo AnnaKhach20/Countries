@@ -6,8 +6,11 @@ const CountryList = () => {
   const { countries, loading, error } = useSelector((state) => state.countries);
   const { text } = useSelector((state) => state.search);
 
-  if (loading) return <div className="loading">Loading countries...</div>;
-  if (error) return <div className="error">Error: {error}</div>;
+  if (loading) 
+    return <div className="loading">Loading countries...</div>;
+  
+  if (error) 
+    return <div className="error">Error: {error}</div>;
 
   const filteredCountries = countries.filter(country =>
     country.name.common.toLowerCase().includes(text.toLowerCase())

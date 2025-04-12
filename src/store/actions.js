@@ -1,6 +1,6 @@
 import {API} from "../Api/api";
 
-// Countries actions
+// Country-neri actions
 export const getCountriesThunk = () => async (dispatch) => {
   dispatch({ type: 'GET_COUNTRIES_REQUEST' });
   try {

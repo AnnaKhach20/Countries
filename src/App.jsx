@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     dispatch(getCountriesThunk());
-  }, [dispatch]);
+  }, []);
 
   return (
     <section className="container">
