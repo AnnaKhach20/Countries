@@ -1,5 +1,4 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import {thunk}from 'redux-thunk';
+import { createStore, combineReducers } from 'redux';
 import { countriesReducer, countryReducer, textReducer } from './reducers';
 
 const rootReducer = combineReducers({
@@ -8,4 +7,13 @@ const rootReducer = combineReducers({
   search: textReducer
 });
 
-export const store = createStore(rootReducer, applyMiddleware(thunk));
+const store = createStore(rootReducer);
+const originalDispatch = store.dispatch;
+store.dispatch = (action) => {
+  if (typeof action === 'function') {
+    return action(originalDispatch, store.getState);
+  }
+  return originalDispatch(action);
+};
+
+export { store };
